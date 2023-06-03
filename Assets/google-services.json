@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "786158202581",
+    "project_id": "hacked-reality",
+    "storage_bucket": "hacked-reality.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:786158202581:android:201fa89af044b48f9b3c5c",
+        "android_client_info": {
+          "package_name": "com.UnityTechnologies.com.unity.template.urpblank"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "786158202581-j421b1f37qb8boa7pg8c8mrr8oo3lfv3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD5ORDHm8ko1DNJYan1Zs3eV3UrVSAtsKE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "786158202581-j421b1f37qb8boa7pg8c8mrr8oo3lfv3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
