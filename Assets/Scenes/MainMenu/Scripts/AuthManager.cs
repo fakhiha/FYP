@@ -22,6 +22,39 @@ public class AuthManager : MonoBehaviour
     public TMP_InputField usernameRegisterField;
     public TMP_InputField emailRegisterField;
     public TMP_InputField passwordRegisterField;
-   
+
+    private void Awake()
+    {
+        FirebaseApp.CheckAndFixDependenciesAsync().ContinueWith(task =>
+        {
+            dependencyStatus = task.Result;
+            if (dependencyStatus == DependencyStatus.Available)
+            {
+                InitializeFirebase();
+            }
+
+            else
+            {
+                Debug.LogError("Could not resolve all Firebase depencies: " + dependencyStatus);
+            }
+
+        });
+    }
+
+    private void InitializeFirebase()
+    {
+        Debug.Log("Setting up Firebase Auth");
+        auth = FirebaseAuth.DefaultInstance;
+    }
+
+    public void LoginButton()
+    {
+        StartCoroutine(Login(emailLoginField.text, passwordLoginField.text));
+
+    }
+    public void RegisterButton()
+    {
+        StartCoroutine(Register(emailRegisterField.text, passwordLoginField.text, usernameRegisterField.text));
+    }
 
 }
