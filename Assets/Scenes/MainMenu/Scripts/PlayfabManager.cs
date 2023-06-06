@@ -37,7 +37,7 @@ public class PlayfabManager : MonoBehaviour
 
     void OnRegisterSuccess(RegisterPlayFabUserResult result)
     {
-        messageText.text = "Registration Successful";
+       // messageText.text = "Registration Successful";
         // Disable the current panel
         gameObject.SetActive(false);
 
